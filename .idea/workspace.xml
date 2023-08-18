@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46f9bbbe-c8ba-4053-8517-f0e2da8c5ab1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RedirTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestJsonPars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestPrintln.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPrintln.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,40 +42,58 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.TestPrintln.getRequest">
-    <configuration name="TestPrintln" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="JUnit.RedirTest">
+    <configuration name="RedirTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api-test-example-restassured" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestPrintln" />
+      <option name="MAIN_CLASS_NAME" value="RedirTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPrintln.getRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RedirTest.testUrlRedir" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api-test-example-restassured" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestPrintln" />
-      <option name="METHOD_NAME" value="getRequest" />
+      <option name="MAIN_CLASS_NAME" value="RedirTest" />
+      <option name="METHOD_NAME" value="testUrlRedir" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPrintln.helloWorld" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestJsonPars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api-test-example-restassured" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestJsonPars" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestJsonPars.testJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api-test-example-restassured" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestJsonPars" />
+      <option name="METHOD_NAME" value="testJson" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPrintln" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api-test-example-restassured" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestPrintln" />
-      <option name="METHOD_NAME" value="helloWorld" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,14 +112,18 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestPrintln.getRequest" />
-      <item itemvalue="JUnit.TestPrintln.helloWorld" />
+      <item itemvalue="JUnit.RedirTest" />
+      <item itemvalue="JUnit.RedirTest.testUrlRedir" />
+      <item itemvalue="JUnit.TestJsonPars" />
+      <item itemvalue="JUnit.TestJsonPars.testJson" />
       <item itemvalue="JUnit.TestPrintln" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestPrintln.getRequest" />
-        <item itemvalue="JUnit.TestPrintln.helloWorld" />
+        <item itemvalue="JUnit.RedirTest" />
+        <item itemvalue="JUnit.RedirTest.testUrlRedir" />
+        <item itemvalue="JUnit.TestJsonPars.testJson" />
+        <item itemvalue="JUnit.TestJsonPars" />
         <item itemvalue="JUnit.TestPrintln" />
       </list>
     </recent_temporary>
@@ -124,11 +144,19 @@
       <option name="project" value="LOCAL" />
       <updated>1691656913901</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="get запрос">
+      <created>1691660594108</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691660594108</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Hello from" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hello from" />
+    <MESSAGE value="get запрос" />
+    <option name="LAST_COMMIT_MESSAGE" value="get запрос" />
   </component>
 </project>

@@ -9,21 +9,17 @@ import java.util.Map;
 public class TestJsonPars {
     @Test
     public void testJson(){
-        Map<String, String> params = new HashMap<>();
-        params.put("message", String.valueOf(0));
-//        Response response = RestAssured
-//                .given()
-//                .get("https://playground.learnqa.ru/api/get_json_homework")
-//                .andReturn();
-//        response.print();
 
-        JsonPath response2 = RestAssured
-                .given()
-                .get("https://playground.learnqa.ru/api/get_json_homework")
-                .jsonPath();
-        String answer = response2.get("second");
-        System.out.println(answer);
+            RestAssured.useRelaxedHTTPSValidation();
+            Map<String, Object> params = new HashMap<>();
 
+            JsonPath response = RestAssured
+                    .given()
+                    .queryParams(params)
+                    .get("https://playground.learnqa.ru/api/get_json_homework")
+                    .jsonPath();
 
+            String message = response.getString("messages[1].message");
+            System.out.println(message);
+        }
     }
-}

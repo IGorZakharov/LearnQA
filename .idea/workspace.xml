@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46f9bbbe-c8ba-4053-8517-f0e2da8c5ab1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/lib/ApiCoreRequests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lib/UserAuthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/UserAuthTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/UserRegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/UserRegisterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lib/ApiCoreRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ApiCoreRequests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694605727062</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="без @, один символ, много символов, без поля">
+      <created>1694610296722</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1694610296722</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -285,6 +289,7 @@
     <MESSAGE value="тест на код 400 регист юзера" />
     <MESSAGE value="тест на код 400 регист юзера (правки)" />
     <MESSAGE value="много тестов" />
-    <option name="LAST_COMMIT_MESSAGE" value="много тестов" />
+    <MESSAGE value="без @, один символ, много символов, без поля" />
+    <option name="LAST_COMMIT_MESSAGE" value="без @, один символ, много символов, без поля" />
   </component>
 </project>

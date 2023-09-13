@@ -16,6 +16,7 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static org.codehaus.groovy.ast.tools.GeneralUtils.param;
 import static org.hamcrest.Matchers.equalTo;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ApiCoreRequests {
     @Step("Make a Get-request with token and auth cookie")
@@ -112,5 +113,26 @@ public class ApiCoreRequests {
                 .statusCode(400)
                 .body("message", equalTo("The 'name' field must be at most 250 characters long"));
     }
+    @Step
+    @DisplayName("Creating a user without specifying one of the fields")
+    @Test
+    public void testGetUserDataWithDifferentID(Map<String, String> authData) {
+        String cookie;
+        String header;
+        int userIdOnAuth;
+
+        Map<String, String> authData = new HashMap<>();
+        authData.put("email", "vinkotov@xample.com");
+        authData.put("password", "1234");
+
+        Response response = RestAssured
+                .given()
+                .post("https://playground.learnqa.ru/api/user/login")
+                .andReturn();
+
+
+
 
 }
+
+

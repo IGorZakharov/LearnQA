@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46f9bbbe-c8ba-4053-8517-f0e2da8c5ab1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/CookieTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/HeadersTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +175,28 @@
       <option name="project" value="LOCAL" />
       <updated>1694589462647</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="тест на длину фразы">
+      <created>1694589772663</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1694589772663</updated>
+    </task>
+    <task id="LOCAL-00008" summary="тест на куки">
+      <created>1694589785230</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1694589785230</updated>
+    </task>
+    <task id="LOCAL-00009" summary="тест на куки2">
+      <created>1694589885870</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1694589885870</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -185,6 +206,8 @@
     <MESSAGE value="редирект на 200" />
     <MESSAGE value="ошибка json" />
     <MESSAGE value="тест на длину фразы" />
-    <option name="LAST_COMMIT_MESSAGE" value="тест на длину фразы" />
+    <MESSAGE value="тест на куки" />
+    <MESSAGE value="тест на куки2" />
+    <option name="LAST_COMMIT_MESSAGE" value="тест на куки2" />
   </component>
 </project>

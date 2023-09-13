@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46f9bbbe-c8ba-4053-8517-f0e2da8c5ab1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/HeadersTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/UsersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694589885870</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="тест на заголовок">
+      <created>1694590353662</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1694590353662</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -208,6 +216,7 @@
     <MESSAGE value="тест на длину фразы" />
     <MESSAGE value="тест на куки" />
     <MESSAGE value="тест на куки2" />
-    <option name="LAST_COMMIT_MESSAGE" value="тест на куки2" />
+    <MESSAGE value="тест на заголовок" />
+    <option name="LAST_COMMIT_MESSAGE" value="тест на заголовок" />
   </component>
 </project>

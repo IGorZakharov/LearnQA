@@ -10,6 +10,11 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import lib.Assertions;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import org.junit.jupiter.api.DisplayName;
+import lib.ApiCoreRequests;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,12 +22,14 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@Epic("Authorisation cases")
+@Feature("Authorisation")
 public class UserAuthTest extends BaseTestcase {
 
     String cookie;
     String header;
     int userIdOnAuth;
-
+private final ApiCoreRequests apiCoreRequests = new ApiCoreRequests();
     @BeforeEach
     public void loginUser(){
 /** Выносим сюда запрос на авторизацию с данными */
@@ -31,11 +38,9 @@ public class UserAuthTest extends BaseTestcase {
         authData.put("email", "vinkotov@xample.com");
         authData.put("password", "1234");
 
-        Response responseGetAuth = RestAssured
-                .given()
-                .body(authData)
-                .post("https://playground.learnqa.ru/api/user/login")
-                .andReturn();
+        Response responseGetAuth = apiCoreRequests
+                .makePostRequeas("https://playground.learnqa.ru/api/user/login", authData);
+
         this.cookie = this.getCookie(responseGetAuth, "auth_sid");
         this.header = this.getHeader(responseGetAuth,"x-csrf-token");
         this.userIdOnAuth = this.getIntFromJson(responseGetAuth, "user_id");
@@ -44,20 +49,22 @@ public class UserAuthTest extends BaseTestcase {
         //System.out.println(statusCode);
     }
     @Test
+    @Description("This test successfully authorize user by email and password")
+    @DisplayName("Test positive auth user")
     public void testAuthUser(){
 
         /**Теперь проверяем действительно ли мы залогинины */
 
-        Response responseCheckAuth = RestAssured
-                .given()
-                .header("x-csrf-token", this.header)
-                .cookies("auth_sid", this.cookie)
-                .get("https://playground.learnqa.ru/api/user/auth")
-                .andReturn();
-
-        //Assertions
+        Response responseCheckAuth = apiCoreRequests
+                .makeGetRequeas(
+                        "https://playground.learnqa.ru/api/user/auth",
+                        this.header,
+                        this.cookie
+                );
+        Assertions.assertJsonByName(responseCheckAuth, "user_sid", this.userIdOnAuth);
     }
-
+@Description("This test checks auth status w/o sending auth cookie or token")
+@DisplayName("Test negative auth user")
     @ParameterizedTest
     @ValueSource(strings = {"cookie", "headers"})
     public void testNegativeAuthUser(String condition){
@@ -65,20 +72,21 @@ public class UserAuthTest extends BaseTestcase {
         RequestSpecification spec = RestAssured.given();
         spec.baseUri("https://playground.learnqa.ru/api/user/auth");
 
-        /** Если пришло значение cookie, то передаем только его.
-         * Если пришло значение headers, то передаем только его
-         */
-        if (condition.equals("cookie")) {
-            spec.cookie("auth_sid", this.cookie);
-        } else if (condition.equals("headers")) {
-            spec.header("x-csrf-token", this.header);
-        } else {
-            throw new IllegalArgumentException("Condition value is know (Значение условия извесно): " + condition);
-
-        }
-
-        JsonPath responseForCheck = spec.get().jsonPath();
-        assertEquals(0, responseForCheck.getInt("user_id"), "user_id должен быть равен 0, для запроса на авторизацию");
+    if (condition.equals("cookie")) {
+        Response responseForCheck = apiCoreRequests.makeGetRequestWithCookie(
+                "https://playground.learnqa.ru/api/user/auth",
+                this.cookie
+        );
+        Assertions.assertJsonByName(responseForCheck,"user_id", 0);
+    } else if (condition.equals("headers")) {
+        Response responseForCheck = apiCoreRequests.makeGetRequestWithToken(
+                "https://playground.learnqa.ru/api/user/auth",
+                this.header
+        );
+        Assertions.assertJsonByName(responseForCheck, "user_id", 0);
+    } else {
+        throw new IllegalArgumentException("Condition value is not know:" + condition);
+    }
 
     }
 

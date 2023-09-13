@@ -3,7 +3,8 @@ package tests;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import lib.BaseTestcase;
-import org.junit.jupiter.api.Assertions;
+import lib.Assertions;
+import lib.DataGenerator;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
@@ -16,10 +17,7 @@ public class UserRegisterTest extends BaseTestcase {
         String email ="vinkotov@example.com";
         Map<String, String> userData = new HashMap<>();
         userData.put("email", email);
-        userData.put("password", "123");
-        userData.put("username", "learnqa");
-        userData.put("firstName", "learnqa");
-        userData.put("lastName", "learnqa");
+        userData = DataGenerator.getRegistrationData(userData);
 
         Response responseCreateAuth = RestAssured
                 .given()
@@ -29,5 +27,27 @@ public class UserRegisterTest extends BaseTestcase {
 
         Assertions.assertResponseCodeEquals(responseCreateAuth, 400);
         Assertions.assertResponseTextEquals(responseCreateAuth, "Users with email '" + email + "' alreade exists");
+    }
+
+    @Test
+    public void testCreateUserSuccessfully(){
+        String email = DataGenerator.getRandomEmail();
+
+        Map<String, String> userData = DataGenerator.getRegistrationData();
+       // userData.put("email", email);
+       // userData.put("password", "123");
+       // userData.put("username", "learnqa");
+       // userData.put("firstName", "learnqa");
+       // userData.put("lastName", "learnqa");
+
+        Response responseCreateAuth = RestAssured
+                .given()
+                .body(userData)
+                .post("https://playground.learnqa.ru/api/user/")
+                .andReturn();
+
+        Assertions.assertResponseCodeEquals(responseCreateAuth, 200);
+        Assertions.assertJsonHasField(responseCreateAuth, "id");
+
     }
 }

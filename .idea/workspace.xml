@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46f9bbbe-c8ba-4053-8517-f0e2da8c5ab1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/UserAuthTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lib/Assertions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lib/BaseTestcase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/PhraseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestJsonPars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestJsonPars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserAuthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/UserAuthTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,21 +80,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestJsonPars.testJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserAuthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api-test-example-restassured" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestJsonPars" />
-      <option name="METHOD_NAME" value="testJson" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.UserAuthTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserAuthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserAuthTest.loginUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api-test-example-restassured" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserAuthTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.UserAuthTest" />
+      <option name="METHOD_NAME" value="loginUser" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -110,19 +113,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.UserAuthTest.loginUser" />
       <item itemvalue="JUnit.UserAuthTest" />
       <item itemvalue="JUnit.RedirTest" />
       <item itemvalue="JUnit.RedirTest.testUrlRedir" />
       <item itemvalue="JUnit.TestJsonPars" />
-      <item itemvalue="JUnit.TestJsonPars.testJson" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UserAuthTest" />
+        <item itemvalue="JUnit.UserAuthTest.loginUser" />
         <item itemvalue="JUnit.TestJsonPars" />
         <item itemvalue="JUnit.RedirTest" />
         <item itemvalue="JUnit.RedirTest.testUrlRedir" />
-        <item itemvalue="JUnit.TestJsonPars.testJson" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692346029210</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ошибка json">
+      <created>1693472328863</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693472328863</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -171,6 +181,7 @@
     <MESSAGE value="get запрос" />
     <MESSAGE value="редирект" />
     <MESSAGE value="редирект на 200" />
-    <option name="LAST_COMMIT_MESSAGE" value="редирект на 200" />
+    <MESSAGE value="ошибка json" />
+    <option name="LAST_COMMIT_MESSAGE" value="ошибка json" />
   </component>
 </project>

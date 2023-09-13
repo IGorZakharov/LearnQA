@@ -10,9 +10,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class UserRegisterTest extends BaseTestcase {
-    String email ="vinkotov@example.com";
+
     @Test
     public void testCreateUserWithExistingEmail(){
+        String email ="vinkotov@example.com";
         Map<String, String> userData = new HashMap<>();
         userData.put("email", email);
         userData.put("password", "123");

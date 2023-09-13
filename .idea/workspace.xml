@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46f9bbbe-c8ba-4053-8517-f0e2da8c5ab1" name="Changes" comment="" />
+    <list default="true" id="46f9bbbe-c8ba-4053-8517-f0e2da8c5ab1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/lib/DataGenerator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -227,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694593467022</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="тест на код 400 регист юзера (правки)">
+      <created>1694593762862</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1694593762862</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -243,6 +252,7 @@
     <MESSAGE value="тест юзеров" />
     <MESSAGE value="классы в lib" />
     <MESSAGE value="тест на код 400 регист юзера" />
-    <option name="LAST_COMMIT_MESSAGE" value="тест на код 400 регист юзера" />
+    <MESSAGE value="тест на код 400 регист юзера (правки)" />
+    <option name="LAST_COMMIT_MESSAGE" value="тест на код 400 регист юзера (правки)" />
   </component>
 </project>

@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46f9bbbe-c8ba-4053-8517-f0e2da8c5ab1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/UsersTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/UserRegisterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lib/Assertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/Assertions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lib/UserAuthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/UserAuthTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,22 +49,12 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.UserAuthTest">
+  <component name="RunManager" selected="JUnit.UserRegisterTest">
     <configuration name="RedirTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api-test-example-restassured" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RedirTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RedirTest.testUrlRedir" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="api-test-example-restassured" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RedirTest" />
-      <option name="METHOD_NAME" value="testUrlRedir" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,6 +87,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserRegisterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api-test-example-restassured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.UserRegisterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="LearnTestQA" />
       <method v="2">
@@ -109,19 +116,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.UserRegisterTest" />
       <item itemvalue="JUnit.UserAuthTest.loginUser" />
       <item itemvalue="JUnit.UserAuthTest" />
       <item itemvalue="JUnit.RedirTest" />
-      <item itemvalue="JUnit.RedirTest.testUrlRedir" />
       <item itemvalue="JUnit.TestJsonPars" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRegisterTest" />
         <item itemvalue="JUnit.UserAuthTest" />
         <item itemvalue="JUnit.UserAuthTest.loginUser" />
         <item itemvalue="JUnit.TestJsonPars" />
         <item itemvalue="JUnit.RedirTest" />
-        <item itemvalue="JUnit.RedirTest.testUrlRedir" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +211,21 @@
       <option name="project" value="LOCAL" />
       <updated>1694590353662</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="тест юзеров">
+      <created>1694592107101</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1694592107101</updated>
+    </task>
+    <task id="LOCAL-00012" summary="классы в lib">
+      <created>1694592275066</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1694592275066</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -217,6 +238,8 @@
     <MESSAGE value="тест на куки" />
     <MESSAGE value="тест на куки2" />
     <MESSAGE value="тест на заголовок" />
-    <option name="LAST_COMMIT_MESSAGE" value="тест на заголовок" />
+    <MESSAGE value="тест юзеров" />
+    <MESSAGE value="классы в lib" />
+    <option name="LAST_COMMIT_MESSAGE" value="классы в lib" />
   </component>
 </project>

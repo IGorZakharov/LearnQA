@@ -55,7 +55,7 @@ public class UserAuthTest extends BaseTestcase {
                 .get("https://playground.learnqa.ru/api/user/auth")
                 .andReturn();
 
-        Assertions
+        //Assertions
     }
 
     @ParameterizedTest

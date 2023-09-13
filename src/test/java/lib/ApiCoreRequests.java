@@ -5,12 +5,15 @@ import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
 import io.restassured.http.Header;
 import io.restassured.response.Response;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
@@ -116,21 +119,47 @@ public class ApiCoreRequests {
     @Step
     @DisplayName("Creating a user without specifying one of the fields")
     @Test
-    public void testGetUserDataWithDifferentID(Map<String, String> authData) {
-        String cookie;
-        String header;
-        int userIdOnAuth;
+    public class ListExampleTest {
 
-        Map<String, String> authData = new HashMap<>();
-        authData.put("email", "vinkotov@xample.com");
-        authData.put("password", "1234");
+        private List<String> list;
 
-        Response response = RestAssured
-                .given()
-                .post("https://playground.learnqa.ru/api/user/login")
-                .andReturn();
+        @BeforeEach
+        void setUp() {
+            list = new ArrayList<>();
+            list.add("apple");
+            list.add("banana");
+            list.add("orange");
+        }
+        @DisplayName("Given a list with 3 elements")
+        class GivenAListWithThreeElements {
 
+            @Test
+            @DisplayName("Then the list size should be 3")
+            void listSizeShouldBeThree() {
+                Assertions.assertEquals(3, list.size());
+            }
 
+            @Test
+            @DisplayName("Then the list should contain 'banana'")
+            void listShouldContainBanana() {
+                Assertions.assertTrue(list.contains("banana"));
+            }
+
+            @Test
+            @DisplayName("When adding 'mango' to the list, then the list should contain 'mango'")
+            void addingMangoToList() {
+                list.add("mango");
+                Assertions.assertTrue(list.contains("mango"));
+            }
+
+            @Test
+            @DisplayName("When removing 'apple' from the list, then the list size should be 2")
+            void removingAppleFromList() {
+                list.remove("apple");
+                Assertions.assertEquals(2, list.size());
+            }
+        }
+    }
 
 
 }
